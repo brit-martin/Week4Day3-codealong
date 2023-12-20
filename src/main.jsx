@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+import Header from './Header.jsx'
 import './index.css'
 import {
   Route,
@@ -13,7 +13,7 @@ import About from './About.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route>
+    <Route path='/' element= {<Header/>}>
     <Route path='/home' element = {<Home/>} />
     <Route path='/about' element= {<About/>} />
     </Route>
