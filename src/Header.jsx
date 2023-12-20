@@ -1,13 +1,20 @@
 import { useState } from 'react'
 import './Header.css'
-import { Outlet } from 'react-router-dom'
+import { Outlet, Link } from 'react-router-dom'
 
 function Header() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      Nav bar and Website Header
+      <ul>
+        <li>
+          <Link to='/'>Home</Link>
+        </li>
+        <li>
+          <Link to='/about'>About</Link>
+        </li>
+      </ul>
       <Outlet/>
     </>
   )
